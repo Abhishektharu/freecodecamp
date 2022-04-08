@@ -1,0 +1,146 @@
+html,
+body{
+    min-width: 300px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* border: solid 2px red; */
+}
+
+#navbar{
+    /* border: solid red; */
+    position: fixed;
+    min-width: 300px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+header{
+    /* border: solid green; */
+    color: black;
+    margin: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: thin;
+}
+
+#main-doc header{
+    /* border: solid red; */
+    text-align: left;
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+#navbar ul{
+    /* border: solid red; */
+    height: 88%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+#navbar li{
+    /* border: solid red; */
+    color: black;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    /* border: solid red; */
+    display: block;
+    padding: 20px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 25px;
+    margin-bottom: 110px;
+    /* border: solid red; */
+    
+}
+
+section article{
+    /* border: solid red; */
+    color: #1e254bee;
+    margin: 10px;
+    font-size: 1em;
+}
+
+section li{
+    /* border: solid red; */
+    margin: 12px 20px;
+}
+
+code{
+    /* border: solid red; */
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 820px) {
+    #navbar ul{
+        border: 0.5px solid;
+        height: 200px;
+        /* border: solid red; */
+
+    }
+
+    /* #navbar a{
+        border: solid red;
+        margin: 0 0 0 0;
+    } */
+
+    #navbar{
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        width: 100%;
+        max-height: 250px;
+        z-index: 1;
+        border-bottom: 2px solid;
+        border: none;
+    }
+
+    #main-doc{
+        position: relative;
+        margin-left: 0px;
+        margin-top: 280px;
+        /* border: solid green; */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc{
+        margin-left: -10px;
+    }
+
+    code{
+        margin-left: -20px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}

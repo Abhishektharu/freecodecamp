@@ -1,0 +1,83 @@
+<head>
+<link rel="stylesheet" href="survey.css">
+<style>
+</style>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for your suggesation we will imporve our service.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">First Name</label>
+      <input type="text" name="first-name" id="name" class="form-control" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+
+      <label id="name-label" for="name">Last Name</label>
+      <input type="text" name="last-name" id="name" class="form-control" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="10" max="100" class="form-control" placeholder="age" />
+    </div>
+    <div class="form-group">
+      <p> Which field describe you </p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Job">Job</option>
+        <option value="learner">Learner</option>
+        <option value="Freelancer">Freelancer</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>How do you rate our services</p>
+      <label>
+        <input name="user-rating" value="excellent" type="radio" class="input-radio" checked />Excellent</label>
+
+      <label>
+        <input name="user-rating" value="average" type="radio" class="input-radio" />Average</label>
+
+      <label>
+        <input name="user-rating" value="poor" type="radio" class="input-radio" />Poor</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What services should we imporve
+      </p>
+
+      <label><input name="prefer" value="Web" type="checkbox" class="input-checkbox" />Web</label>
+      <label><input name="prefer" value="front-end" type="checkbox" class="input-checkbox" />Front-end</label>
+      <label><input name="prefer" value="back-end" type="checkbox" class="input-checkbox" />Back-end</label>
+      <label><input name="prefer" value="ui" type="checkbox" class="input-checkbox" />UI (User Interface)</label>
+
+      <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
+
+      <label><input name="prefer" value="lectures" type="checkbox" class="input-checkbox" />Lectures</label>
+
+      <label><input name="prefer" value="git" type="checkbox" class="input-checkbox" />Git</label>
+    </div>
+
+    <div class="form-group">
+      <p>Any comments</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here....."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-btn">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,82 @@
+html{
+  font-size: 1.2rem;
+}
+#main{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border-radius: 20px;
+  border-color: red;
+}
+body{
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: 0;
+}
+
+h1{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0px, auto;
+}
+#img-div{
+  background: white;
+  padding: 50px;
+/*   border: solid red; */
+}
+#img-caption{
+  margin: 5px 0px 0px 0px ;
+/*   border: solid red; */
+}
+h2{
+  font-size: 1.5rem;
+}
+
+a:visited{
+  color: blue;
+}
+@media (max-width: 600px){
+  #tribute-link{
+    display: flex;
+    margin-left: 0px;
+  }
+}
+#headline{
+  border: solid red;
+  margin: 100px 0;
+  text-align: center;
+}
+ul{
+  max-width: 500px;
+  margin: -50px auto 30px auto;
+  text-align: left;
+  
+}
+@media (max-width: 900px){
+  ul{
+    display: block;
+    text-align: left;
+    border: solid blue;
+  }
+}
+li{
+  margin: 2px 0px 3px auto;
+/*   border: solid green; */
+}
+
+}
+blockquote{
+  border: solid green;
+  font-style: italic;
+  font-size: 20px;
+  max-width: 500px;
+/*   margin: 0 50px 0 auto; */
+  margin: 0 auto 0px auto;
+  text-align: center;
+}
